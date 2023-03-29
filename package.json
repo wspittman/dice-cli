@@ -1,0 +1,23 @@
+{
+  "name": "dice-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A cli over rpg-dice-roller",
+  "main": "index.js",
+  "author": "William Pittman (https://github.com/wspittman)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint index.js --fix",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@dice-roller/rpg-dice-roller": "^5.2.1",
+    "chalk": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7"
+  }
+}
