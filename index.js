@@ -1,23 +1,32 @@
-import { DiceRoller } from '@dice-roller/rpg-dice-roller';
+import chalk from 'chalk';
+import { roll } from './Roll.js';
 import { closeInput, getInput } from './UserInput.js';
 
-const roller = new DiceRoller();
-let input = '';
-
 async function main() {
-  input = await getInput();
+  const input = await getInput();
+  const command = input.trim().toLowerCase();
 
-  if (input !== 'exit') {
-    try {
-      roller.roll(input);
-      console.log(roller.output);
-    } catch (error) {
-      console.log(error.message);
+  switch (command) {
+    case 'exit': {
+      closeInput();
+      return;
     }
-    main();
-  } else {
-    closeInput();
+    case 'cls':
+    case 'clear': {
+      console.clear();
+      break;
+    }
+    default: {
+      try {
+        const { total, text } = roll(input);
+        console.log(`  ${chalk.bold(total)} <== ${text}`);
+      } catch (error) {
+        console.log(error.message);
+      }
+    }
   }
+
+  main();
 }
 
 main();
