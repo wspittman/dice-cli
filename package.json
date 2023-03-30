@@ -7,7 +7,7 @@
   "author": "William Pittman (https://github.com/wspittman)",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint index.js --fix",
+    "lint": "eslint *.js *.cjs --fix",
     "start": "node index.js"
   },
   "dependencies": {
