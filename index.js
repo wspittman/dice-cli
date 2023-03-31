@@ -1,5 +1,10 @@
 import { roll } from './Roll.js';
-import { closeInput, getTokenLists, reloadMacros } from './UserInput.js';
+import {
+  closeInput,
+  getMacroNames,
+  getTokenLists,
+  reloadMacros,
+} from './UserInput.js';
 import { logProcessedLists } from './UserOutput.js';
 
 function getPotentialCommand(tokenLists) {
@@ -24,14 +29,21 @@ function processTokens(tokens) {
 
 function logHelp() {
   console.log('Commands:');
-  console.log('  help: show this help message');
-  console.log('  exit: exit the program');
   console.log('  cls, clear: clear the console');
+  console.log('  exit: exit the program');
+  console.log('  help: show this help message');
+  console.log('  list: list all macros');
   console.log('  reload, refresh: reload macros');
   console.log('  [anything else]: roll the dice');
   console.log(
     '    To include context, embed dice in brackets, eg. [1d20+2] fire damage'
   );
+}
+
+function logMacroNames() {
+  const { custom, standard } = getMacroNames();
+  console.log(`Custom macros: ${custom.join(', ')}`);
+  console.log(`Default macros: ${standard.join(', ')}`);
 }
 
 async function main() {
@@ -50,6 +62,10 @@ async function main() {
     }
     case 'help': {
       logHelp();
+      break;
+    }
+    case 'list': {
+      logMacroNames();
       break;
     }
     case 'reload':

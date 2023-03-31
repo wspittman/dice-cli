@@ -37,6 +37,13 @@ export function reloadMacros() {
   }
 }
 
+export function getMacroNames() {
+  return {
+    custom: Object.keys(macrosCustom),
+    standard: Object.keys(macros),
+  };
+}
+
 export async function getTokenLists() {
   const input = await rl.question('>');
   const mixedInput = macrosCustom[input] || macros[input] || input;
