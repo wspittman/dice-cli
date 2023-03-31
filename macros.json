@@ -1,4 +1,20 @@
 {
+  "assassin": [
+    "Shortsword 1: [1d20 + 6] vs AC; [1d6 + 3] piercing; DC15 ConS (half) or [7d6] poison",
+    "Shortsword 1: [1d20 + 6] vs AC; [1d6 + 3] piercing; DC15 ConS (half) or [7d6] poison"
+  ],
+  "assassin.bow": ["Light Crossbow: [1d20 + 6] vs AC; [1d8 + 3] piercing and DC 15 ConS (half) or [7d6] poison"],
+  "assassin.sneak": ["Sneak attack: [4d6]"],
+  "displacer": [
+    "Tentacle: [1d20 + 6] vs AC; [1d6 + 4] bludgeoning and [1d6] piercing",
+    "Tentacle: [1d20 + 6] vs AC; [1d6 + 4] bludgeoning and [1d6] piercing"
+  ],
+  "ghast": [
+    "Claws: [1d20 + 5] vs AC; [2d6 + 3] slashing and DC 10 ConS or paralyzed"
+  ],
+  "ghoul": [
+    "Claws: [1d20 + 4] vs AC; [2d4 + 2] slashing and DC 10 ConS or paralyzed"
+  ],
   "spy": [
     "Claw 1: [1d20 + 4] vs AC; [1d6 + 2] piercing",
     "Claw 2: [1d20 + 4] vs AC; [1d6 + 2] piercing"

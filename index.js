@@ -1,5 +1,5 @@
 import { roll } from './Roll.js';
-import { closeInput, getTokenLists } from './UserInput.js';
+import { closeInput, getTokenLists, reloadMacros } from './UserInput.js';
 import { logProcessedLists } from './UserOutput.js';
 
 function getPotentialCommand(tokenLists) {
@@ -34,6 +34,11 @@ async function main() {
     case 'cls':
     case 'clear': {
       console.clear();
+      break;
+    }
+    case 'reload':
+    case 'refresh': {
+      reloadMacros();
       break;
     }
     default: {
