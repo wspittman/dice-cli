@@ -1,10 +1,11 @@
 import chalk from 'chalk';
 import { roll } from './Roll.js';
-import { closeInput, getInput } from './UserInput.js';
+import { closeInput, getInputTokens } from './UserInput.js';
 
 async function main() {
-  const input = await getInput();
-  const command = input.trim().toLowerCase();
+  const tokens = await getInputTokens();
+  const command =
+    tokens.length === 1 ? tokens[0].text.trim().toLowerCase() : undefined;
 
   switch (command) {
     case 'exit': {
@@ -18,8 +19,20 @@ async function main() {
     }
     default: {
       try {
-        const { total, text } = roll(input);
-        console.log(`  ${chalk.bold(total)} <== ${text}`);
+        const processed = tokens.map((token) =>
+          token.isRoll ? roll(token.text) : token.text
+        );
+
+        const total = processed
+          .map((x) => (x.total ? chalk.bold(x.total) : x))
+          .join('');
+
+        const built = processed
+          .filter((x) => x.total != undefined)
+          .map((x) => x.text)
+          .join(' / ');
+
+        console.log(`  ${total} <== ${built}`);
       } catch (error) {
         console.log(error.message);
       }
