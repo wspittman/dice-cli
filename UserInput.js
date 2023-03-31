@@ -1,6 +1,8 @@
+import * as fs from 'node:fs';
 import { stdin as input, stdout as output } from 'node:process';
 import * as readline from 'node:readline/promises';
 
+const macros = JSON.parse(fs.readFileSync('macros.json', 'utf8'));
 const rl = readline.createInterface({ input, output });
 const bracketSplitterRegex = /(\[.*?\])|([^[]+)/g;
 
@@ -24,10 +26,11 @@ function tokenize(input) {
   return tokens;
 }
 
-export async function getInputTokens() {
+export async function getTokenLists() {
   const input = await rl.question('>');
-  const tokens = tokenize(input);
-  return tokens;
+  const mixedInput = macros[input] || input;
+  const inputStrings = Array.isArray(mixedInput) ? mixedInput : [mixedInput];
+  return inputStrings.map(tokenize);
 }
 
 export function closeInput() {

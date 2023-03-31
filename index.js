@@ -1,11 +1,30 @@
-import chalk from 'chalk';
 import { roll } from './Roll.js';
-import { closeInput, getInputTokens } from './UserInput.js';
+import { closeInput, getTokenLists } from './UserInput.js';
+import { logProcessedLists } from './UserOutput.js';
+
+function getPotentialCommand(tokenLists) {
+  if (tokenLists.length === 1 && tokenLists[0].length === 1) {
+    return tokenLists[0][0].text.trim().toLowerCase();
+  }
+}
+
+function processTokens(tokens) {
+  return tokens.map((token) => {
+    try {
+      return token.isRoll ? roll(token.text) : token;
+    } catch (error) {
+      return {
+        total: 'ERR',
+        text: `[ERR: ${token.text}]`,
+        err: error.message,
+      };
+    }
+  });
+}
 
 async function main() {
-  const tokens = await getInputTokens();
-  const command =
-    tokens.length === 1 ? tokens[0].text.trim().toLowerCase() : undefined;
+  const tokenLists = await getTokenLists();
+  const command = getPotentialCommand(tokenLists);
 
   switch (command) {
     case 'exit': {
@@ -18,24 +37,7 @@ async function main() {
       break;
     }
     default: {
-      try {
-        const processed = tokens.map((token) =>
-          token.isRoll ? roll(token.text) : token.text
-        );
-
-        const total = processed
-          .map((x) => (x.total ? chalk.bold(x.total) : x))
-          .join('');
-
-        const built = processed
-          .filter((x) => x.total != undefined)
-          .map((x) => x.text)
-          .join(' / ');
-
-        console.log(`  ${total} <== ${built}`);
-      } catch (error) {
-        console.log(error.message);
-      }
+      logProcessedLists(tokenLists.map(processTokens));
     }
   }
 

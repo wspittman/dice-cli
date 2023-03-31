@@ -1,0 +1,8 @@
+{
+  "spy": [
+    "Claw 1: [1d20 + 4] vs AC; [1d6 + 2] piercing",
+    "Claw 2: [1d20 + 4] vs AC; [1d6 + 2] piercing"
+  ],
+  "spy.bow": "Hand Crossbow: [1d20 + 4] vs AC; [1d6 + 2] piercing",
+  "spy.sneak": "Sneak attack: [2d6]"
+}
