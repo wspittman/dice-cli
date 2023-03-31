@@ -12,13 +12,17 @@ export function roll(input) {
 
   const text = result.rolls
     .map((roll, index) => {
-      const value = roll.value;
-      const isMax = value != undefined && value === maxes[index];
-      const str = roll.toString();
+      if (!roll.rolls) return roll.toString();
 
-      if (value === 1) return chalk.red(str);
-      if (isMax) return chalk.green(str);
-      return str;
+      const vals = roll.rolls.map((x) => {
+        const value = x.value;
+        const isMax = value != undefined && value === maxes[index];
+
+        if (value === 1) return chalk.red(value);
+        if (isMax) return chalk.green(value);
+        return value;
+      });
+      return `[${vals.join(', ')}]`;
     })
     .join('');
 
