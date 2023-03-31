@@ -30,6 +30,9 @@ function tokenize(input) {
   return tokens;
 }
 
+/**
+ * Reload macros from files
+ */
 export function reloadMacros() {
   macros = JSON.parse(fs.readFileSync(macrosName, 'utf8'));
   if (fs.existsSync(macrosCustomName)) {
@@ -37,6 +40,10 @@ export function reloadMacros() {
   }
 }
 
+/**
+ * Get the names of available macros
+ * @returns {{ custom: string[], standard: string[] }}
+ */
 export function getMacroNames() {
   return {
     custom: Object.keys(macrosCustom),
@@ -44,6 +51,10 @@ export function getMacroNames() {
   };
 }
 
+/**
+ * Takes input from the console, tokenizes it, and returns the token lists
+ * @returns {Promise<{ text: string, isRoll: boolean }[][]>}
+ */
 export async function getTokenLists() {
   const input = await rl.question('>');
   const mixedInput = macrosCustom[input] || macros[input] || input;
@@ -51,6 +62,9 @@ export async function getTokenLists() {
   return inputStrings.map(tokenize);
 }
 
+/**
+ * Close the input stream
+ */
 export function closeInput() {
   rl.close();
 }

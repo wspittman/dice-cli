@@ -1,8 +1,13 @@
 import { DiceRoll } from '@dice-roller/rpg-dice-roller';
 import chalk from 'chalk';
 
-export function roll(input) {
-  const result = new DiceRoll(input);
+/**
+ * Roll the dice
+ * @param {string} notation The dice notation to roll
+ * @returns {{ total: number, text: string }} The total number and the roll result text
+ */
+export function roll(notation) {
+  const result = new DiceRoll(notation);
 
   // This is a hack to get the max value of each die
   const expressionSymbol = Object.getOwnPropertySymbols(result).find(

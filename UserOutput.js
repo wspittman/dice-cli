@@ -1,5 +1,9 @@
 import chalk from 'chalk';
 
+/**
+ * Log the processed tokens
+ * @param {{ total: number, text: string, err: string }[]} processed The processed tokens
+ */
 function logProccessed(processed) {
   const total = processed
     .map((token) => (token.total ? chalk.bold(token.total) : token.text))
@@ -17,6 +21,10 @@ function logProccessed(processed) {
   errs.forEach((err) => console.log(chalk.yellow(`  ${err}`)));
 }
 
+/**
+ * Log the processed lists
+ * @param {{ total: number, text: string, err: string }[][]} processedLists The processed lists
+ */
 export function logProcessedLists(processedLists) {
   processedLists.map(logProccessed);
 }
