@@ -72,7 +72,8 @@ async function main() {
       console.clear();
       break;
     }
-    case 'exit': {
+    case 'exit':
+    case 'quit': {
       closeInput();
       return;
     }

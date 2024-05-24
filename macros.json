@@ -1,204 +1,243 @@
 {
   "animatedarmor": [
-    "Slam: [1d20 + 4] vs AC; [1d6 + 2] bludgeoning",
-    "Slam: [1d20 + 4] vs AC; [1d6 + 2] bludgeoning"
+    "Slam: [1d20 + 4] atk; [1d6 + 2] bludgeoning",
+    "Slam: [1d20 + 4] atk; [1d6 + 2] bludgeoning"
   ],
   "assassin": [
-    "Shortsword 1: [1d20 + 6] vs AC; [1d6 + 3] piercing; DC15 ConS (half) or [7d6] poison",
-    "Shortsword 2: [1d20 + 6] vs AC; [1d6 + 3] piercing; DC15 ConS (half) or [7d6] poison"
+    "Shortsword 1: [1d20 + 6] atk; [1d6 + 3] piercing; DC15 ConS (half) or [7d6] poison",
+    "Shortsword 2: [1d20 + 6] atk; [1d6 + 3] piercing; DC15 ConS (half) or [7d6] poison"
   ],
-  "assassin.bow": ["Light Crossbow: [1d20 + 6] vs AC; [1d8 + 3] piercing and DC 15 ConS (half) or [7d6] poison"],
+  "assassin.bow": [
+    "Light Crossbow: [1d20 + 6] atk; [1d8 + 3] piercing and DC 15 ConS (half) or [7d6] poison"
+  ],
   "assassin.sneak": ["Sneak attack: [4d6]"],
   "brownbear": [
-    "Bite: [1d20 + 5] vs AC; [1d8 + 4] piercing",
-    "Claws: [1d20 + 5] vs AC; [2d6 + 4] slashing"
+    "Bite: [1d20 + 5] atk; [1d8 + 4] piercing",
+    "Claws: [1d20 + 5] atk; [2d6 + 4] slashing"
   ],
-  "bugbear": ["Morningstar: [1d20 + 4] vs AC; [2d8 + 2] piercing"],
+  "bugbear": ["Morningstar: [1d20 + 4] atk; [2d8 + 2] piercing"],
+  "ccrawler": [
+    "Tentacles: [1d20 + 8] atk; [1d4 + 2] poison and DC 12 ConS or poisoned/paralyze (resave)",
+    "Bite: [1d20 + 4] atk; [2d4 + 2] piercing"
+  ],
   "displacer": [
-    "Tentacle 1: [1d20 + 6] vs AC; [1d6 + 4] bludgeoning and [1d6] piercing",
-    "Tentacle 2: [1d20 + 6] vs AC; [1d6 + 4] bludgeoning and [1d6] piercing"
+    "Tentacle 1: [1d20 + 6] atk; [1d6 + 4] bludgeoning and [1d6] piercing",
+    "Tentacle 2: [1d20 + 6] atk; [1d6 + 4] bludgeoning and [1d6] piercing"
   ],
   "dragon.green.young": [
-    "Bite: [1d20 + 7] vs AC; [2d10 + 4] piercing and [2d6] poison",
-    "Claw: [1d20 + 7] vs AC; [2d6 + 4] slashing",
-    "Claw: [1d20 + 7] vs AC; [2d6 + 4] slashing"
+    "Bite: [1d20 + 7] atk; [2d10 + 4] piercing and [2d6] poison",
+    "Claw: [1d20 + 7] atk; [2d6 + 4] slashing",
+    "Claw: [1d20 + 7] atk; [2d6 + 4] slashing"
   ],
   "dragon.white.young": [
-    "Bite: [1d20 + 7] vs AC; [2d10 + 4] piercing and [1d8] cold",
-    "Claw 1: [1d20 + 7] vs AC; [2d6 + 4] slashing",
-    "Claw 2: [1d20 + 7] vs AC; [2d6 + 4] slashing"
+    "Bite: [1d20 + 7] atk; [2d10 + 4] piercing and [1d8] cold",
+    "Claw 1: [1d20 + 7] atk; [2d6 + 4] slashing",
+    "Claw 2: [1d20 + 7] atk; [2d6 + 4] slashing"
+  ],
+  "elemental.air": [
+    "Slam: [1d20 + 8] atk; [2d8 + 5] bludgeoning",
+    "Slam: [1d20 + 8] atk; [2d8 + 5] bludgeoning"
+  ],
+  "elemental.earth": [
+    "Slam: [1d20 + 8] atk; [2d8 + 5] bludgeoning",
+    "Slam: [1d20 + 8] atk; [2d8 + 5] bludgeoning"
+  ],
+  "elemental.fire": [
+    "Touch: [1d20 + 6] atk; [2d6 + 3] fire and 1d10 fire at SoT till douse action",
+    "Touch: [1d20 + 6] atk; [2d6 + 3] fire and 1d10 fire at SoT till douse action"
+  ],
+  "elemental.water": [
+    "Slam: [1d20 + 7] atk; [2d8 + 4] bludgeoning",
+    "Slam: [1d20 + 7] atk; [2d8 + 4] bludgeoning"
   ],
   "ettercap": [
-    "Bite: [1d20 + 4] vs AC; [1d8 + 2] piercing and 1d8 poison and DC 11 ConS or poisoned",
-    "Claw: [1d20 + 4] vs AC; [2d4 + 2] slashing"
+    "Bite: [1d20 + 4] atk; [1d8 + 2] piercing and 1d8 poison and DC 11 ConS or poisoned",
+    "Claw: [1d20 + 4] atk; [2d4 + 2] slashing"
   ],
   "ettin": [
-    "Battleaxe: [1d20 + 7] vs AC; [2d8 + 5] slashing",
-    "Morningstar: [1d20 + 7] vs AC; [2d8 + 5] piercing"
+    "Battleaxe: [1d20 + 7] atk; [2d8 + 5] slashing",
+    "Morningstar: [1d20 + 7] atk; [2d8 + 5] piercing"
+  ],
+  "formorian": [
+    "Greatclub: [1d20 + 9] atk; [3d8 + 6] bludgeoning",
+    "Evil Eye: DC 14 ChaS or [6d8] psychic"
   ],
   "giant.hill": [
-    "Greatclub: [1d20 + 8] vs AC; [3d8 + 5] bludgeoning",
-    "Greatclub: [1d20 + 8] vs AC; [3d8 + 5] bludgeoning"
+    "Greatclub: [1d20 + 8] atk; [3d8 + 5] bludgeoning",
+    "Greatclub: [1d20 + 8] atk; [3d8 + 5] bludgeoning"
   ],
-  "giant.hill.rock": [
-    "Rock: [1d20 + 8] vs AC; [3d10 + 5] bludgeoning"
-  ],
+  "giant.hill.rock": ["Rock: [1d20 + 8] atk; [3d10 + 5] bludgeoning"],
   "ghast": [
-    "Claws: [1d20 + 5] vs AC; [2d6 + 3] slashing and DC 10 ConS or paralyzed"
+    "Claws: [1d20 + 5] atk; [2d6 + 3] slashing and DC 10 ConS or paralyzed"
   ],
-  "ghost": "Touch: [1d20 + 5] vs AC; [4d6 + 3] necrotic",
+  "ghost": "Touch: [1d20 + 5] atk; [4d6 + 3] necrotic",
   "ghoul": [
-    "Claws: [1d20 + 4] vs AC; [2d4 + 2] slashing and DC 10 ConS or paralyzed"
+    "Claws: [1d20 + 4] atk; [2d4 + 2] slashing and DC 10 ConS or paralyzed"
   ],
-  "gnoll": "Spear: [1d20 + 4] vs AC; [1d6 + 2] piercing",
-  "gnoll.bite": "Bite: [1d20 + 4] vs AC; [1d4 + 2] piercing",
-  "gnoll.bow": "Longbow: [1d20 + 3] vs AC; [1d8 + 1] piercing",
+  "gnoll": "Spear: [1d20 + 4] atk; [1d6 + 2] piercing",
+  "gnoll.bite": "Bite: [1d20 + 4] atk; [1d4 + 2] piercing",
+  "gnoll.bow": "Longbow: [1d20 + 3] atk; [1d8 + 1] piercing",
   "gfy": [
-    "Bite: [1d20 + 5] vs AC; [1d6 + 3] piercing and DC 12 ConS or [2d6] poison",
-    "Claw: [1d20 + 5] vs AC; [1d8 + 3] slashing",
-    "Claw: [1d20 + 5] vs AC; [1d8 + 3] slashing"
+    "Bite: [1d20 + 5] atk; [1d6 + 3] piercing and DC 12 ConS or [2d6] poison",
+    "Claw: [1d20 + 5] atk; [1d8 + 3] slashing",
+    "Claw: [1d20 + 5] atk; [1d8 + 3] slashing"
   ],
   "gpl": [
-    "Glaive: [1d20 + 5] vs AC; [1d10 + 3] slashing",
-    "Glaive: [1d20 + 5] vs AC; [1d10 + 3] slashing"
+    "Glaive: [1d20 + 5] atk; [1d10 + 3] slashing",
+    "Glaive: [1d20 + 5] atk; [1d10 + 3] slashing"
   ],
-  "gpl.bite": "Bite: [1d20 + 5] vs AC; [1d4 + 3] piercing",
+  "gpl.bite": "Bite: [1d20 + 5] atk; [1d4 + 3] piercing",
   "gpl.bow": [
-    "Longbow: [1d20 + 4] vs AC; [1d8 + 2] piercing",
-    "Longbow: [1d20 + 4] vs AC; [1d8 + 2] piercing"
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing",
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing"
   ],
   "grick": [
-    "Tentacles: [1d20 + 4] vs AC; [2d6 + 2] slashing",
-    "(if T hits) Beak: [1d20 + 4] vs AC; [1d6 + 2] piercing"
+    "Tentacles: [1d20 + 4] atk; [2d6 + 2] slashing",
+    "(if T hits) Beak: [1d20 + 4] atk; [1d6 + 2] piercing"
   ],
   "grick.alpha": [
-    "Tail: [1d20 + 7] vs AC; [2d6 + 4] bludgeoning",
-    "Tentacles: [1d20 + 7] vs AC; [4d8 + 4] slashing",
-    "(if Tent hits) Beak: [1d20 + 7] vs AC; [2d8 + 4] piercing"
+    "Tail: [1d20 + 7] atk; [2d6 + 4] bludgeoning",
+    "Tentacles: [1d20 + 7] atk; [4d8 + 4] slashing",
+    "(if Tent hits) Beak: [1d20 + 7] atk; [2d8 + 4] piercing"
   ],
-  "guard": "Mace: [1d20 + 3] vs AC; [1d6 + 1] bludgeoning",
-  "guard.bow": "Heavy Crossbow: [1d20 + 3] vs AC; [1d10 + 1] piercing",
-  "hobgoblin": "Longsword: [1d20 + 3] vs AC; [1d8 + 1] slashing",
-  "hobgoblin.bow": "Longbow: [1d20 + 3] vs AC; [1d8 + 1] piercing",
+  "guard": "Mace: [1d20 + 3] atk; [1d6 + 1] bludgeoning",
+  "guard.bow": "Heavy Crossbow: [1d20 + 3] atk; [1d10 + 1] piercing",
+  "hobgoblin": "Longsword: [1d20 + 3] atk; [1d8 + 1] slashing",
+  "hobgoblin.bow": "Longbow: [1d20 + 3] atk; [1d8 + 1] piercing",
   "imp": [
-    "Sting/Bite: [1d20 + 5] vs AC; [1d4 + 3] piercing and DC 11 ConS (half) or [3d6] poison"
+    "Sting/Bite: [1d20 + 5] atk; [1d4 + 3] piercing and DC 11 ConS (half) or [3d6] poison"
   ],
   "kobold": [
-    "If Pack Tactics: Dagger: [2d20kh1 + 4] vs AC; [1d4 + 2] piercing",
-    "Else: Dagger: [1d20 + 4] vs AC; [1d4 + 2] piercing"
+    "If Pack Tactics: Dagger: [2d20kh1 + 4] atk; [1d4 + 2] piercing",
+    "Else: Dagger: [1d20 + 4] atk; [1d4 + 2] piercing"
   ],
   "kobold.sling": [
-    "If Pack Tactics: Sling: [2d20kh1 + 4] vs AC; [1d4 + 2] bludgeoning",
-    "Else: Sling: [1d20 + 4] vs AC; [1d4 + 2] bludgeoning"
+    "If Pack Tactics: Sling: [2d20kh1 + 4] atk; [1d4 + 2] bludgeoning",
+    "Else: Sling: [1d20 + 4] atk; [1d4 + 2] bludgeoning"
   ],
   "lizardfolk": [
-    "Bite: [1d20 + 4] vs AC; [1d6 + 2] piercing",
-    "Heavy Club: [1d20 + 4] vs AC; [1d6 + 2] bludgeoning"
+    "Bite: [1d20 + 4] atk; [1d6 + 2] piercing",
+    "Heavy Club: [1d20 + 4] atk; [1d6 + 2] bludgeoning"
   ],
-  "lizardfolk.jav": [
-    "Javelin: [1d20 + 4] vs AC; [1d6 + 2] piercing"
-  ],
+  "lizardfolk.jav": ["Javelin: [1d20 + 4] atk; [1d6 + 2] piercing"],
   "manticore": [
-    "Bite: [1d20 + 5] vs AC; [1d8 + 3] piercing",
-    "Claw 1: [1d20 + 5] vs AC; [1d6 + 3] slashing",
-    "Claw 2: [1d20 + 5] vs AC; [1d6 + 3] slashing"
+    "Bite: [1d20 + 5] atk; [1d8 + 3] piercing",
+    "Claw 1: [1d20 + 5] atk; [1d6 + 3] slashing",
+    "Claw 2: [1d20 + 5] atk; [1d6 + 3] slashing"
   ],
   "manticore.spike": [
-    "Spike 1: [1d20 + 5] vs AC; [1d8 + 3] piercing",
-    "Spike 2: [1d20 + 5] vs AC; [1d8 + 3] piercing",
-    "Spike 3: [1d20 + 5] vs AC; [1d8 + 3] piercing"
+    "Spike 1: [1d20 + 5] atk; [1d8 + 3] piercing",
+    "Spike 2: [1d20 + 5] atk; [1d8 + 3] piercing",
+    "Spike 3: [1d20 + 5] atk; [1d8 + 3] piercing"
   ],
   "mummy": [
-    "Fist: [1d20 + 5] vs AC; [2d6 + 3] bludgeoning and DC 12 ConS or mummy rot"
+    "Fist: [1d20 + 5] atk; [2d6 + 3] bludgeoning and DC 12 ConS or mummy rot"
   ],
   "nothic": [
-    "Claw: [1d20 + 4] vs AC; [1d6 + 3] slashing",
-    "Claw: [1d20 + 4] vs AC; [1d6 + 3] slashing"
+    "Claw: [1d20 + 4] atk; [1d6 + 3] slashing",
+    "Claw: [1d20 + 4] atk; [1d6 + 3] slashing"
   ],
   "nothic.insight": "Weird Insight: [1d20 + 4] vs Deception",
-  "ogre": [
-    "Greatclub: [1d20 + 6] vs AC; [2d8 + 4] bludgeoning"
-  ],
-  "ogre.jav": [
-    "Javelin: [1d20 + 6] vs AC; [2d6 + 4] piercing"
-  ],
+  "ogre": ["Greatclub: [1d20 + 6] atk; [2d8 + 4] bludgeoning"],
+  "ogre.jav": ["Javelin: [1d20 + 6] atk; [2d6 + 4] piercing"],
   "oni": [
-    "Glaive: [1d20 + 7] vs AC; [2d10 + 4] slashing",
-    "Glaive: [1d20 + 7] vs AC; [2d10 + 4] slashing"
+    "Glaive: [1d20 + 7] atk; [2d10 + 4] slashing",
+    "Glaive: [1d20 + 7] atk; [2d10 + 4] slashing"
   ],
-  "orc": [
-    "Greataxe: [1d20 + 5] vs AC; [1d12 + 3] slashing"
+  "orc": ["Greataxe: [1d20 + 5] atk; [1d12 + 3] slashing"],
+  "orc.jav": ["Javelin: [1d20 + 5] atk; [1d6 + 3] piercing"],
+  "otyugh": [
+    "Bite: [1d20 + 6] atk; [2d8 + 3] piercing and DC 15 ConS or poison/disease",
+    "Tentacle 1: [1d20 + 6] atk; [1d8 + 3] bludgeoning and [1d8] piercing and grapple/restrain",
+    "Tentacle 1: [1d20 + 6] atk; [1d8 + 3] bludgeoning and [1d8] piercing and grapple/restrain"
   ],
-  "orc.jav": [
-    "Javelin: [1d20 + 5] vs AC; [1d6 + 3] piercing"
-  ],
-  "rat.g": "Bite: [1d20 + 4] vs AC; [1d4 + 2] piercing",
+  "rat.g": "Bite: [1d20 + 4] atk; [1d4 + 2] piercing",
   "revenant": [
-    "Fist 1: [1d20 + 7] vs AC; [2d6 + 4] bludgeoning",
-    "Fist 2: [1d20 + 7] vs AC; [2d6 + 4] bludgeoning"
+    "Fist 1: [1d20 + 7] atk; [2d6 + 4] bludgeoning",
+    "Fist 2: [1d20 + 7] atk; [2d6 + 4] bludgeoning"
   ],
   "scarecrow": [
-    "Claw: [1d20 + 3] vs AC; [2d4 + 1] slashing and DC 11 WisS or fright",
-    "Claw: [1d20 + 3] vs AC; [2d4 + 1] slashing and DC 11 WisS or fright"
+    "Claw: [1d20 + 3] atk; [2d4 + 1] slashing and DC 11 WisS or fright",
+    "Claw: [1d20 + 3] atk; [2d4 + 1] slashing and DC 11 WisS or fright"
   ],
   "spy": [
-    "Claw 1: [1d20 + 4] vs AC; [1d6 + 2] piercing",
-    "Claw 2: [1d20 + 4] vs AC; [1d6 + 2] piercing"
+    "Claw 1: [1d20 + 4] atk; [1d6 + 2] piercing",
+    "Claw 2: [1d20 + 4] atk; [1d6 + 2] piercing"
   ],
-  "spy.bow": "Hand Crossbow: [1d20 + 4] vs AC; [1d6 + 2] piercing",
+  "spy.bow": "Hand Crossbow: [1d20 + 4] atk; [1d6 + 2] piercing",
   "spy.sneak": "Sneak attack: [2d6]",
   "troll": [
-    "Bite: [1d20 + 7] vs AC; [1d6 + 4] piercing",
-    "Claw 1: [1d20 + 7] vs AC; [2d6 + 4] slashing",
-    "Claw 2: [1d20 + 7] vs AC; [2d6 + 4] slashing"
+    "Bite: [1d20 + 7] atk; [1d6 + 4] piercing",
+    "Claw 1: [1d20 + 7] atk; [2d6 + 4] slashing",
+    "Claw 2: [1d20 + 7] atk; [2d6 + 4] slashing"
   ],
   "werebear": [
-    "Claw 1: [1d20 + 7] vs AC; [2d8 + 4] slashing",
-    "Claw 2: [1d20 + 7] vs AC; [2d8 + 4] slashing"
+    "Claw 1: [1d20 + 7] atk; [2d8 + 4] slashing",
+    "Claw 2: [1d20 + 7] atk; [2d8 + 4] slashing"
+  ],
+  "wereboar": [
+    "Maul: [1d20 + 5] atk; [2d6 + 3] bludgeoning",
+    "Tusk: [1d20 + 5] atk; [2d6 + 3] slashing, DC 12 ConS or cursed"
   ],
   "wererat": [
-    "Bite: [1d20 + 4] vs AC; [1d4 + 2] piercing and DC 11 ConS or cursed",
-    "Shortsword: [1d20 + 4] vs AC; [1d6 + 2] piercing"
+    "Bite: [1d20 + 4] atk; [1d4 + 2] piercing and DC 11 ConS or cursed",
+    "Shortsword: [1d20 + 4] atk; [1d6 + 2] piercing"
   ],
   "wererat.bow": [
-    "Hand Crossbow: [1d20 + 4] vs AC; [1d6 + 2] piercing",
-    "Hand Crossbow: [1d20 + 4] vs AC; [1d6 + 2] piercing"
+    "Hand Crossbow: [1d20 + 4] atk; [1d6 + 2] piercing",
+    "Hand Crossbow: [1d20 + 4] atk; [1d6 + 2] piercing"
   ],
-  "wisp": "Shock: [2d20kh1 + 4] vs AC; [2d8] lightning",
+  "weretiger": [
+    "Scimitar: [1d20 + 5] atk; [1d6 + 3] slashing",
+    "Scimitar: [1d20 + 5] atk; [1d6 + 3] slashing"
+  ],
+  "weretiger.bow": [
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing",
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing"
+  ],
+  "wight": [
+    "Longsword: [1d20 + 4] atk; [1d10 + 2] slashing",
+    "Life Drain: [1d20 + 4] atk; [1d6 + 2] necrotic and DC 13 ConS or max HP reduced by same"
+  ],
+  "wight.bow": [
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing",
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing"
+  ],
+  "wisp": "Shock: [2d20kh1 + 4] atk; [2d8] lightning",
   "yuan": [
-    "Scimitar: [1d20 + 3] vs AC; [1d6 + 1] slashing",
-    "Scimitar: [1d20 + 3] vs AC; [1d6 + 1] slashing"
+    "Scimitar: [1d20 + 3] atk; [1d6 + 1] slashing",
+    "Scimitar: [1d20 + 3] atk; [1d6 + 1] slashing"
   ],
-  "yuan.bow": "Shortbox: [1d20 + 3] vs AC; [1d6 + 1] piercing + [2d6] poison",
+  "yuan.bow": "Shortbox: [1d20 + 3] atk; [1d6 + 1] piercing + [2d6] poison",
   "yuan.a": [
-    "Bite: [1d20 + 7] vs AC; [1d6 + 4] piercing and [3d6] poison",
-    "Constrict: [1d20 + 7] vs AC; [2d6 + 4] bludgeoning and grappled (restrained, DC 14)",
-    "Scimitar: [1d20 + 7] vs AC; [2d6 + 4] slashing"
+    "Bite: [1d20 + 7] atk; [1d6 + 4] piercing and [3d6] poison",
+    "Constrict: [1d20 + 7] atk; [2d6 + 4] bludgeoning and grappled (restrained, DC 14)",
+    "Scimitar: [1d20 + 7] atk; [2d6 + 4] slashing"
   ],
   "yuan.a.bow": [
-    "Longbow: [1d20 + 6] vs AC; [2d8 + 3] piercing and [3d6] poison",
-    "Longbow: [1d20 + 6] vs AC; [2d8 + 3] piercing and [3d6] poison"
+    "Longbow: [1d20 + 6] atk; [2d8 + 3] piercing and [3d6] poison",
+    "Longbow: [1d20 + 6] atk; [2d8 + 3] piercing and [3d6] poison"
   ],
   "yuan.m1": [
-    "Bite: [1d20 + 5] vs AC; [1d4 + 3] piercing and [2d6] poison",
-    "Scimitar: [1d20 + 5] vs AC; [1d6 + 3] slashing"
+    "Bite: [1d20 + 5] atk; [1d4 + 3] piercing and [2d6] poison",
+    "Scimitar: [1d20 + 5] atk; [1d6 + 3] slashing"
   ],
   "yuan.m1.bow": [
-    "Longbow: [1d20 + 4] vs AC; [1d8 + 2] piercing and [2d6] poison",
-    "Longbow: [1d20 + 4] vs AC; [1d8 + 2] piercing and [2d6] poison"
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing and [2d6] poison",
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing and [2d6] poison"
   ],
   "yuan.m2": [
-    "Bite: [1d20 + 5] vs AC; [1d4 + 3] piercing and [2d6] poison",
-    "Bite: [1d20 + 5] vs AC; [1d4 + 3] piercing and [2d6] poison"
+    "Bite: [1d20 + 5] atk; [1d4 + 3] piercing and [2d6] poison",
+    "Bite: [1d20 + 5] atk; [1d4 + 3] piercing and [2d6] poison"
   ],
   "yuan.m3": [
-    "Constrict: [1d20 + 5] vs AC; [2d6 + 3] bludgeoning and grappled (restrained, DC 13)",
-    "Scimitar: [1d20 + 5] vs AC; [1d6 + 3] slashing"
+    "Constrict: [1d20 + 5] atk; [2d6 + 3] bludgeoning and grappled (restrained, DC 13)",
+    "Scimitar: [1d20 + 5] atk; [1d6 + 3] slashing"
   ],
   "yuan.m3.bow": [
-    "Longbow: [1d20 + 4] vs AC; [1d8 + 2] piercing",
-    "Longbow: [1d20 + 4] vs AC; [1d8 + 2] piercing"
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing",
+    "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing"
   ],
-  "zombie": "Slam: [1d20 + 3] vs AC; [1d6 + 1] bludgeoning",
-  "zombie.ogre": "Slam: [1d20 + 6] vs AC; [2d8 + 4] bludgeoning"
+  "zombie": "Slam: [1d20 + 3] atk; [1d6 + 1] bludgeoning",
+  "zombie.ogre": "Slam: [1d20 + 6] atk; [2d8 + 4] bludgeoning"
 }
