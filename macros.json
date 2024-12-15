@@ -16,6 +16,14 @@
     "Claws: [1d20 + 5] atk; [2d6 + 4] slashing"
   ],
   "bugbear": ["Morningstar: [1d20 + 4] atk; [2d8 + 2] piercing"],
+  "cambion": [
+    "Spear: [1d20 + 7] atk; [1d8 + 4] piercing and [1d6] fire",
+    "Spear: [1d20 + 7] atk; [1d8 + 4] piercing and [1d6] fire"
+  ],
+  "cambion.fire": [
+    "Fire Ray: [1d20 + 7] atk; [3d6] fire",
+    "Fire Ray: [1d20 + 7] atk; [3d6] fire"
+  ],
   "ccrawler": [
     "Tentacles: [1d20 + 8] atk; [1d4 + 2] poison and DC 12 ConS or poisoned/paralyze (resave)",
     "Bite: [1d20 + 4] atk; [2d4 + 2] piercing"
@@ -29,11 +37,45 @@
     "Claw: [1d20 + 7] atk; [2d6 + 4] slashing",
     "Claw: [1d20 + 7] atk; [2d6 + 4] slashing"
   ],
+  "dragon.silver.adult": [
+    "Bite: [1d20 + 13] atk; [2d10 + 8] piercing",
+    "Claw 1: [1d20 + 13] atk; [2d6 + 8] slashing",
+    "Claw 2: [1d20 + 13] atk; [2d6 + 8] slashing"
+  ],
+  "dragon.silver.adult.p": [
+    "Only used against adjacent paralyzed target",
+    "Bite: [2d20kh1 + 13] atk; [4d10 + 8] piercing",
+    "Claw 1: [2d20kh1 + 13] atk; [4d6 + 8] slashing",
+    "Claw 2: [2d20kh1 + 13] atk; [4d6 + 8] slashing"
+  ],
+  "dragon.silver.adult.tail": "Tail: [1d20 + 13] atk; [2d8 + 8] bludgeoning",
+  "dragon.silver.adult.tail.p": [
+    "Only used against adjacent paralyzed target",
+    "Tail: [2d20kh1 + 13] atk; [4d8 + 8] bludgeoning"
+  ],
+  "dragon.silver.wyrm": "Bite: [1d20 + 6] atk; [1d10 + 4] piercing",
+  "dragon.silver.wyrm.p": [
+    "Only used against adjacent paralyzed target",
+    "Bite: [2d20kh1 + 6] atk; [2d10 + 4] piercing"
+  ],
+  "dragon.white.ancient": [
+    "Bite: [1d20 + 14] atk; [2d10 + 8] piercing and [2d8] cold",
+    "Claw 1: [1d20 + 14] atk; [2d6 + 8] slashing",
+    "Claw 1: [1d20 + 14] atk; [2d6 + 8] slashing"
+  ],
+  "dragon.white.ancient.tail": "Tail: [1d20 + 14] atk; [2d8 + 8] bludgeoning",
+  "dragon.white.adult": [
+    "Bite: [1d20 + 11] atk; [2d10 + 6] piercing and [1d8] cold",
+    "Claw 1: [1d20 + 11] atk; [2d6 + 6] slashing",
+    "Claw 2: [1d20 + 11] atk; [2d6 + 6] slashing"
+  ],
+  "dragon.white.adult.tail": "Tail: [1d20 + 11] atk; [2d8 + 6] bludgeoning",
   "dragon.white.young": [
     "Bite: [1d20 + 7] atk; [2d10 + 4] piercing and [1d8] cold",
     "Claw 1: [1d20 + 7] atk; [2d6 + 4] slashing",
     "Claw 2: [1d20 + 7] atk; [2d6 + 4] slashing"
   ],
+  "dragon.white.wyrm": "Bite: [1d20 + 4] atk; [1d10 + 2] piercing and [1d4] cold",
   "elemental.air": [
     "Slam: [1d20 + 8] atk; [2d8 + 5] bludgeoning",
     "Slam: [1d20 + 8] atk; [2d8 + 5] bludgeoning"
@@ -102,10 +144,15 @@
   ],
   "guard": "Mace: [1d20 + 3] atk; [1d6 + 1] bludgeoning",
   "guard.bow": "Heavy Crossbow: [1d20 + 3] atk; [1d10 + 1] piercing",
+  "hellhound": "Bite: [1d20 + 5] atk ([2d20kh1 + 5] if pack); [1d8 + 3] piercing and [2d6] fire",
   "hobgoblin": "Longsword: [1d20 + 3] atk; [1d8 + 1] slashing",
   "hobgoblin.bow": "Longbow: [1d20 + 3] atk; [1d8 + 1] piercing",
   "imp": [
     "Sting/Bite: [1d20 + 5] atk; [1d4 + 3] piercing and DC 11 ConS (half) or [3d6] poison"
+  ],
+  "knight": [
+    "Greatsword: [1d20 + 5] atk; [2d6 + 3] slashing",
+    "Greatsword: [1d20 + 5] atk; [2d6 + 3] slashing"
   ],
   "kobold": [
     "If Pack Tactics: Dagger: [2d20kh1 + 4] atk; [1d4 + 2] piercing",
@@ -130,6 +177,7 @@
     "Spike 2: [1d20 + 5] atk; [1d8 + 3] piercing",
     "Spike 3: [1d20 + 5] atk; [1d8 + 3] piercing"
   ],
+  "mimic": "Pseudopod/Bite: [1d20 + 5] atk; P: [1d8 + 3] bludgeoning and Adhesive or B: [1d8 + 3] piercing and [1d8] acid",
   "mummy": [
     "Fist: [1d20 + 5] atk; [2d6 + 3] bludgeoning and DC 12 ConS or mummy rot"
   ],
@@ -150,6 +198,10 @@
     "Bite: [1d20 + 6] atk; [2d8 + 3] piercing and DC 15 ConS or poison/disease",
     "Tentacle 1: [1d20 + 6] atk; [1d8 + 3] bludgeoning and [1d8] piercing and grapple/restrain",
     "Tentacle 1: [1d20 + 6] atk; [1d8 + 3] bludgeoning and [1d8] piercing and grapple/restrain"
+  ],
+  "rakshasa": [
+    "Claw 1: [1d20 + 7] atk; [2d6 + 2] slashing and cursed",
+    "Claw 2: [1d20 + 7] atk; [2d6 + 4] slashing and cursed"
   ],
   "rat.g": "Bite: [1d20 + 4] atk; [1d4 + 2] piercing",
   "revenant": [
@@ -203,6 +255,7 @@
     "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing",
     "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing"
   ],
+  "winterwolf": "Bite: [1d20 + 6] atk ([2d20kh1 + 6] if pack); [2d6 + 4] piercing and DC 14 StrS or prone",
   "wisp": "Shock: [2d20kh1 + 4] atk; [2d8] lightning",
   "yuan": [
     "Scimitar: [1d20 + 3] atk; [1d6 + 1] slashing",
