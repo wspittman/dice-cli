@@ -43,19 +43,19 @@
     "Claw 2: [1d20 + 13] atk; [2d6 + 8] slashing"
   ],
   "dragon.silver.adult.p": [
-    "Only used against adjacent paralyzed target",
+    "Only used against adjacent paralyzed target [0]",
     "Bite: [2d20kh1 + 13] atk; [4d10 + 8] piercing",
     "Claw 1: [2d20kh1 + 13] atk; [4d6 + 8] slashing",
     "Claw 2: [2d20kh1 + 13] atk; [4d6 + 8] slashing"
   ],
   "dragon.silver.adult.tail": "Tail: [1d20 + 13] atk; [2d8 + 8] bludgeoning",
   "dragon.silver.adult.tail.p": [
-    "Only used against adjacent paralyzed target",
+    "Only used against adjacent paralyzed target [0]",
     "Tail: [2d20kh1 + 13] atk; [4d8 + 8] bludgeoning"
   ],
   "dragon.silver.wyrm": "Bite: [1d20 + 6] atk; [1d10 + 4] piercing",
   "dragon.silver.wyrm.p": [
-    "Only used against adjacent paralyzed target",
+    "Only used against adjacent paralyzed target [0]",
     "Bite: [2d20kh1 + 6] atk; [2d10 + 4] piercing"
   ],
   "dragon.white.ancient": [
