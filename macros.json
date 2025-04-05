@@ -32,6 +32,12 @@
     "Tentacle 1: [1d20 + 6] atk; [1d6 + 4] bludgeoning and [1d6] piercing",
     "Tentacle 2: [1d20 + 6] atk; [1d6 + 4] bludgeoning and [1d6] piercing"
   ],
+  "dragon.blue.adult": [
+    "Bite: [1d20 + 12] atk; [2d10 + 7] piercing and [1d10] lightning",
+    "Claw 1: [1d20 + 12] atk; [2d6 + 7] slashing",
+    "Claw 1: [1d20 + 12] atk; [2d6 + 7] slashing"
+  ],
+  "dragon.blue.adult.tail": "Tail: [1d20 + 12] atk; [2d8 + 7] bludgeoning",
   "dragon.green.young": [
     "Bite: [1d20 + 7] atk; [2d10 + 4] piercing and [2d6] poison",
     "Claw: [1d20 + 7] atk; [2d6 + 4] slashing",
@@ -76,6 +82,14 @@
     "Claw 2: [1d20 + 7] atk; [2d6 + 4] slashing"
   ],
   "dragon.white.wyrm": "Bite: [1d20 + 4] atk; [1d10 + 2] piercing and [1d4] cold",
+  "efreeti": [
+    "Scimitar 1: [1d20 + 10] atk; [2d6 + 6] slashing and [2d6] fire",
+    "Scimitar 2: [1d20 + 10] atk; [2d6 + 6] slashing and [2d6] fire"
+  ],
+  "efreeti.fire": [
+    "Hurl Flame 1: [1d20 + 7] atk; [5d6] Fire",
+    "Hurl Flame 2: [1d20 + 7] atk; [5d6] Fire"
+  ],
   "elemental.air": [
     "Slam: [1d20 + 8] atk; [2d8 + 5] bludgeoning",
     "Slam: [1d20 + 8] atk; [2d8 + 5] bludgeoning"
@@ -181,6 +195,7 @@
   "mummy": [
     "Fist: [1d20 + 5] atk; [2d6 + 3] bludgeoning and DC 12 ConS or mummy rot"
   ],
+  "naga.bone": "Bite: [1d20 + 5] atk; [2d6 + 3] piercing and [3d6] poison",
   "nothic": [
     "Claw: [1d20 + 4] atk; [1d6 + 3] slashing",
     "Claw: [1d20 + 4] atk; [1d6 + 3] slashing"
@@ -212,6 +227,11 @@
     "Claw: [1d20 + 3] atk; [2d4 + 1] slashing and DC 11 WisS or fright",
     "Claw: [1d20 + 3] atk; [2d4 + 1] slashing and DC 11 WisS or fright"
   ],
+  "scorpion.giant": [
+    "Claw 1: [1d20 + 4] atk; [1d8 + 2] bludgeoning and grappled",
+    "Claw 2: [1d20 + 4] atk; [1d8 + 2] bludgeoning and grappled",
+    "Stinger: [1d20 + 4] atk; [1d10 + 2] piercing and DC 12 ConS (half) or [4d10] poison"
+  ],
   "spy": [
     "Claw 1: [1d20 + 4] atk; [1d6 + 2] piercing",
     "Claw 2: [1d20 + 4] atk; [1d6 + 2] piercing"
@@ -222,6 +242,15 @@
     "Bite: [1d20 + 7] atk; [1d6 + 4] piercing",
     "Claw 1: [1d20 + 7] atk; [2d6 + 4] slashing",
     "Claw 2: [1d20 + 7] atk; [2d6 + 4] slashing"
+  ],
+  "vampire": [
+    "Unarmed Strike: [1d20 + 9] atk; [1d8 + 4] bludgeoning OR grappled",
+    "grap/incap/restr: Bite: [1d20 + 9] atk; [1d6 + 4] pierce and [3d6] necrotic / HP transfer",
+    "OR Unarmed Strike: [1d20 + 9] atk; [1d8 + 4] bludgeoning OR grappled"
+  ],
+  "vampire.sword": [
+    "Greatsword 1: [1d20 + 9] atk; [2d6 + 4] slashing",
+    "Greatsword 2: [1d20 + 9] atk; [2d6 + 4] slashing"
   ],
   "werebear": [
     "Claw 1: [1d20 + 7] atk; [2d8 + 4] slashing",
@@ -246,6 +275,14 @@
   "weretiger.bow": [
     "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing",
     "Longbow: [1d20 + 4] atk; [1d8 + 2] piercing"
+  ],
+  "werewolf": [
+    "Bite: [1d20 + 4] atk; [1d8 + 2] piercing and DC 12 ConS or cursed",
+    "Claw: [1d20 + 4] atk; [2d4 + 2] slashing"
+  ],
+  "werewolf.spear": [
+    "Spear 1: [1d20 + 4] atk; [1d6 + 2] piercing or [1d8 + 2] piercing if 2 hands",
+    "Spear 2: [1d20 + 4] atk; [1d6 + 2] piercing or [1d8 + 2] piercing if 2 hands"
   ],
   "wight": [
     "Longsword: [1d20 + 4] atk; [1d10 + 2] slashing",
